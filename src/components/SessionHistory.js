@@ -1,0 +1,1 @@
+import React from 'react';\n\nfunction SessionHistory({ sessions }) {\n  return (\n    <div className='session-history'>\n      {sessions.map((session, index) => (\n        <div key={index} className='session-item'>\n          {session.date}\n        </div>\n      ))}\n    </div>\n  );\n}\n\nexport default SessionHistory;

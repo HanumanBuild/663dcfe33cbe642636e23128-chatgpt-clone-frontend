@@ -1,0 +1,1 @@
+import React from 'react';\n\nfunction ChatDisplay({ messages }) {\n  return (\n    <div className='chat-display'>\n      {messages.map((msg, index) => (\n        <div key={index} className={`message ${msg.isBot ? 'bot' : 'user'}`}>\n          {msg.text}\n        </div>\n      ))}\n    </div>\n  );\n}\n\nexport default ChatDisplay;
